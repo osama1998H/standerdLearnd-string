@@ -7,5 +7,7 @@ for i in str1:
             if i not in common:
                 common.append(i)
                 break
-
-print(common)
+if len(common) == 0:
+    print("empty")
+else:
+    print(common)
