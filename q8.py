@@ -1,6 +1,6 @@
 from colorama import Fore
 
-string = input(Fore.GREEN + "Enter The Text: ")
+string = input(f"{Fore.GREEN}Enter The Text: ")
 
 
 def new_func(string: str):

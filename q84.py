@@ -1,16 +1,9 @@
 string = input('enter the text : ')
-x = [i for i in string]
+x = list(string)
 for i in x:
     if i.islower():
         x[x.index(i)] = i.upper()
     elif i.upper():
         x[x.index(i)] = i.lower()
-    else:
-        pass
-
-text = ''
-for i in x:
-    text += i
-
-
+text = ''.join(x)
 print(text)

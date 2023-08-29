@@ -2,9 +2,5 @@
 
 string = input("enter the string: ")
 
-if len(string) >= 2:
-    new_string = string[:2] + string[-2:]
-else:
-    new_string = "empty string"
-
+new_string = string[:2] + string[-2:] if len(string) >= 2 else "empty string"
 print(new_string)

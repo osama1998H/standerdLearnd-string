@@ -11,16 +11,13 @@ def change_given_string(string: str) -> str:
     Returns:
         str: [Return New Generated String]
     """
-    string = [i for i in string]
-    new_string = ""
+    string = list(string)
     first = string[0]
     last = string[-1]
     temp = string[0]  # ? this is temprory varible
     string[0] = last
     string[-1] = temp
-    for i in string:
-        new_string += i
-    return new_string
+    return "".join(string)
 
 
 print(change_given_string(string=string))

@@ -1,10 +1,5 @@
 string = input("enter some text : ")
 
 
-count = 0
-
-for i in string:
-    if i.isnumeric():
-        count += int(i)
-
+count = sum(int(i) for i in string if i.isnumeric())
 print(count)

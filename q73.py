@@ -1,6 +1,6 @@
 string = input('enter some string : ')
 
-lString = [i for i in string]
+lString = list(string)
 
 upper = []
 lower = []

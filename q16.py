@@ -10,13 +10,10 @@ def add_blade(blade: str, content: str) -> str:
     Returns:
         str: [return blade template]
     """
-    blade = [i for i in blade]
-    middle = int(len(blade)/2)
-    new_blade = ""
+    blade = list(blade)
+    middle = len(blade) // 2
     blade.insert(middle, content)
-    for b in blade:
-        new_blade += b
-    return(new_blade)
+    return "".join(blade)
 
 
 print(add_blade("{{}}", "php"))

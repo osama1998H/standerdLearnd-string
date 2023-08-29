@@ -20,14 +20,13 @@ def go():
     position = []
     distance = []
     myCanvas.delete("all")
-    for i in range(10):
+    for _ in range(10):
         x = random.uniform(10, 590)
         y = random.uniform(10, 390)
         create_circle(x, y, 3, myCanvas)
         position.append([x, y])
     for i in position:
-        for n in position:
-            distance.append([dist(i, n)])
+        distance.extend([dist(i, n)] for n in position)
         print(distance)
     print("============================")
     root.after(50, go)
