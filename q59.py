@@ -1,10 +1,7 @@
 string = input("enter the string: ")
-freq = {}
-for i in string:
-    freq[i] = string.count(i)
-
+freq = {i: string.count(i) for i in string}
 count = 0
-for key, value in freq.items():
+for value in freq.values():
     if value > count:
         count = value
 

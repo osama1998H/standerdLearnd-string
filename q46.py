@@ -1,7 +1,7 @@
 string = input("enter the name: ")
 
 word = string.split()
-string = [i for i in string]
+string = list(string)
 
 
 print(word)

@@ -1,14 +1,12 @@
 string = input("enter the text: ")
-string = [i for i in string]
+string = list(string)
 comma = string.index(',')
 dot = string.index('.')
 
 string[comma] = '.'
 string[dot] = ','
 
-text = ''
-for i in string:
-    text += i
+text = ''.join(string)
 print(text)
 maketras = text.maketrans
 

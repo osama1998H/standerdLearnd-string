@@ -4,10 +4,7 @@ string = "hello from python"
 freq = {}
 
 for i in string:
-    count = 0
-    for n in string:
-        if i == n:
-            count += 1
+    count = sum(1 for n in string if i == n)
     freq[f"{i}"] = count
 
 print(freq)

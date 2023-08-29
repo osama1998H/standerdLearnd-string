@@ -11,11 +11,9 @@ def generate_user(string: str) -> tuple:
         str: [return tuble of 3 values (orginal string, new string, out value)]
     """
     old_string = string
-    string = [i for i in string]
+    string = list(string)
     new_string = sorted(string)
-    out = ""
-    for i in new_string:
-        out += i
+    out = "".join(new_string)
     return(string, new_string, out)
 
 

@@ -10,10 +10,7 @@ word_list = text.split()
 print(len(word_list))
 freq = {}
 for i in word_list:
-    count = 0
-    for n in word_list:
-        if i == n:
-            count += 1
+    count = sum(1 for n in word_list if i == n)
     freq[i] = count
 
 for k, v in freq.items():

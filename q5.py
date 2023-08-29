@@ -14,8 +14,7 @@ def generate_string(str1: str, str2: str) -> str:
     """
     str1_n = str2[:2] + str1[2:]
     str2_n = str1[:2] + str2[2:]
-    new_string = str1_n + " " + str2_n
-    return new_string
+    return f"{str1_n} {str2_n}"
 
 
 new_string = generate_string(str1, str2)

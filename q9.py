@@ -3,7 +3,7 @@ string = input("enter the text: ")
 
 
 def remove_th_voice(string: str) -> str:
-    string = [i for i in string]
+    string = list(string)
     new_string,  n = "", "t"
     for i in string:
         if (string.index(i)+1) <= len(string):

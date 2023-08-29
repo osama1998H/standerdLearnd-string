@@ -1,7 +1,6 @@
 
 def bytearray_to_hexadecimal(list_val):
-    result = ''.join('{:02x}'.format(x) for x in list_val)
-    return(result)
+    return ''.join('{:02x}'.format(x) for x in list_val)
 
 
 list_val = [710, 12, 45, 67, 109]

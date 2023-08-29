@@ -11,14 +11,7 @@ for key, value in a.items():
     else:
         nd.append(key)
 
-text1 = ''
-text2 = ''
-
-for i in d:
-    text1 += i
-
-for i in nd:
-    text2 += i
-
+text1 = ''.join(d)
+text2 = ''.join(nd)
 print(text1)
 print(text2)

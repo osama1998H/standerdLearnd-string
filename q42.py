@@ -6,13 +6,10 @@ print(string.replace(" ", ""))
 
 def chars_freq(string: str):
     string = string.replace(" ", "")
-    string = [i for i in string]
+    string = list(string)
     freq = {}
     for i in string:
-        count = 0
-        for s in string:
-            if i == s:
-                count += 1
+        count = sum(1 for s in string if i == s)
         freq[i] = count
 
     return freq

@@ -9,13 +9,7 @@ hasher = [
 
 text = input("enter the text: ")
 
-string = [i for i in text]
-new_string = []
-for n in string:
-
-    new_string.append(hasher[hasher.index(n)+3])
-
-x = ""
-for i in new_string:
-    x += i
+string = list(text)
+new_string = [hasher[hasher.index(n)+3] for n in string]
+x = "".join(new_string)
 print(x)
